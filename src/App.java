@@ -1,3 +1,7 @@
+import Controllers.LibroController;
+import Views.ViewConsole;
+import models.Book;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -33,6 +37,15 @@ public class App {
                 new Book("Deep Learning", 2016),
                 new Book("The Elements of Statistical Learning", 2001)
         };
+
+        LibroController lc = new LibroController();
+        ViewConsole vc = new ViewConsole();
+
+        vc.printArray(books);
+        
+
+
+        
 
     }
 }
